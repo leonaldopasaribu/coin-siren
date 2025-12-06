@@ -13,7 +13,7 @@ export default function Header() {
           />
         </div>
 
-        <nav className="flex-1 font-bold">
+        <nav className="hidden flex-1 font-bold sm:block">
           <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-[60px]">
             <div className="flex cursor-pointer items-center gap-1 sm:gap-2">
               <p className="text-xs sm:text-sm lg:text-base">채용</p>
@@ -30,7 +30,7 @@ export default function Header() {
           </div>
         </nav>
 
-        <div className="shrink-0">
+        <div className="hidden shrink-0 sm:block">
           <Button label="로그인" type="primary" />
         </div>
       </div>

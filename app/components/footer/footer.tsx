@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div className="w-full text-black">
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-[15px]">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-[15px]">
               {FOOTER_FEATURES.map((feature) => {
                 return (
                   <div
