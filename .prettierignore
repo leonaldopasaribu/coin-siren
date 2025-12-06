@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build outputs
+build
+dist
+.output
+.react-router
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Other
+.DS_Store
+coverage
