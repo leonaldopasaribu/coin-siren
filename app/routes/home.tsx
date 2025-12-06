@@ -1,10 +1,8 @@
-import type { Route } from "./+types/home";
-
 import Footer from "~/components/footer";
 import Header from "~/components/header";
 import Hero from "~/components/hero";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Coin Siren" },
     { name: "description", content: "Coin Siren" },

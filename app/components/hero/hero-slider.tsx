@@ -18,13 +18,13 @@ const VISIBLE_RANGE = 1;
 
 export default function HeroSlider({ items }: { items: Candidate[] }) {
   const [index, setIndex] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(() => 
+    typeof window !== 'undefined' ? window.innerWidth : 1024
+  );
 
   const total = useMemo(() => items.length, [items]);
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
