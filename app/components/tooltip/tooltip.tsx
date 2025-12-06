@@ -5,7 +5,7 @@ interface SpeechBubbleProps {
   arrow?: "left" | "center" | "right";
 }
 
-export default function SpeechBubble({
+export default function Tooltip({
   children,
   arrow = "center",
 }: SpeechBubbleProps) {

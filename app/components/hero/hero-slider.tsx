@@ -1,10 +1,10 @@
-import { motion, wrap } from "framer-motion";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { motion, wrap } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import HeroCard from "./hero-card";
 
-interface Candidate{
+interface Candidate {
   id: string;
   name: string;
   role: string;
@@ -18,8 +18,8 @@ const VISIBLE_RANGE = 1;
 
 export default function HeroSlider({ items }: { items: Candidate[] }) {
   const [index, setIndex] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(() => 
-    typeof window !== 'undefined' ? window.innerWidth : 1024
+  const [windowWidth, setWindowWidth] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth : 1024
   );
 
   const total = useMemo(() => items.length, [items]);

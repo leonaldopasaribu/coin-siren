@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import SpeechBuble from "../speech-buble";
 import Divider from "../divider";
+import Tooltip from "../tooltip";
+
 import {
   HERO_FEATURES,
   HERO_HIRE_ROLES,
@@ -30,9 +31,9 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.3 }}
             >
-              <SpeechBuble arrow="left">
+              <Tooltip arrow="left">
                 <p className="text-[#40E2E8]">풀타임, 파트타임</p>{" "}
-              </SpeechBuble>
+              </Tooltip>
             </motion.div>
             <motion.p
               className="mt-4 text-5xl font-extrabold"
@@ -80,7 +81,7 @@ export default function Hero() {
           </div>
 
           <div className="mx-auto flex w-full flex-col">
-            <SpeechBuble>
+            <Tooltip>
               <div className="flex items-center gap-2.5">
                 <img
                   src="/icons/dollar-sign.svg"
@@ -90,7 +91,7 @@ export default function Hero() {
                 />
                 <p className="text-[#00C696]">월 100만원</p>
               </div>
-            </SpeechBuble>
+            </Tooltip>
 
             <HeroSlider items={HERO_SLIDER_PROFILE} />
           </div>
