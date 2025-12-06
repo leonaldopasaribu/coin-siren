@@ -1,62 +1,116 @@
-# Welcome to React Router!
+# 🪙 Coin Siren
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, responsive web application built with React Router that provides a beautiful and intuitive interface for cryptocurrency information.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## ✨ Features
 
-## Features
+- 🚀 **Modern Stack** - Built with React Router 7 and latest React 19
+- 📱 **Fully Responsive** - Perfect experience on desktop, tablet, and mobile devices
+- 🎨 **Beautiful UI** - Clean and modern interface with smooth animations using Framer Motion
+- ⚡ **Fast Performance** - Optimized with server-side rendering and hot module replacement
+- 🎯 **Type-Safe** - Full TypeScript support for better development experience
+- 💅 **Styled with Tailwind** - Modern utility-first CSS framework
+- 🐳 **Docker Ready** - Easy deployment with Docker containerization
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 📸 Screenshots
 
-## Getting Started
+<img width="1470" height="657" alt="image" src="https://github.com/user-attachments/assets/b781aae4-f23b-47a1-bff7-6cc9caa163f1" />
+
+
+## 🛠️ Tech Stack
+
+- **Framework:** [React Router 7](https://reactrouter.com/) - Modern full-stack React framework
+- **Language:** [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **UI Library:** [React 19](https://react.dev/) - Latest React version
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS framework
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) - Production-ready animations
+- **Icons:** [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
+- **Linting:** [ESLint](https://eslint.org/) - Code quality and consistency
+- **Formatting:** [Prettier](https://prettier.io/) - Code formatting
+- **Package Manager:** [pnpm](https://pnpm.io/) - Fast, disk space efficient
+- **Build Tool:** [Vite](https://vite.dev/) - Next generation frontend tooling
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- pnpm (recommended) or npm/yarn
 
 ### Installation
 
-Install the dependencies:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/leonaldopasaribu/coin-siren.git
+   cd coin-siren
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables** (if needed)
+   
+   Create a `.env` file in the root directory:
+   ```env
+   # Add your environment variables here
+   ```
+
+4. **Run the development server**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser**
+   
+   Navigate to [http://localhost:5173](http://localhost:5173) to see the application.
+
+## 📝 Development
+
+### Available Scripts
+
+- `pnpm dev` - Start development server with HMR
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm typecheck` - Run TypeScript type checking
+- `pnpm lint` - Check code with ESLint
+- `pnpm lint:fix` - Fix ESLint errors automatically
+- `pnpm format` - Format code with Prettier
+- `pnpm format:check` - Check code formatting
+
+### Project Structure
+
+The application uses:
+- **React Router App Directory** - Modern file-based routing
+- **TypeScript** - Full type safety across the codebase
+- **Server-Side Rendering** - Better SEO and performance
+- **ESLint** - Code quality and consistency
+- **Prettier** - Code formatting
+
+## 🌐 Deployment
+
+### Deploy with Docker
+
+Build and run using Docker:
 
 ```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
+# Build the Docker image
+docker build -t coin-siren .
 
 # Run the container
-docker run -p 3000:3000 my-app
+docker run -p 3000:3000 coin-siren
 ```
 
 The containerized application can be deployed to any platform that supports Docker, including:
-
 - AWS ECS
 - Google Cloud Run
 - Azure Container Apps
@@ -66,22 +120,59 @@ The containerized application can be deployed to any platform that supports Dock
 
 ### DIY Deployment
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+For traditional Node.js deployment:
 
-Make sure to deploy the output of `npm run build`
+1. Build the application:
+   ```bash
+   pnpm build
+   ```
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+2. Deploy the following files:
+   ```
+   ├── package.json
+   ├── pnpm-lock.yaml
+   └── build/
+       ├── client/    # Static assets
+       └── server/    # Server-side code
+   ```
 
-## Styling
+3. Start the production server:
+   ```bash
+   pnpm start
+   ```
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+## 📚 Learn More
+
+To learn more about the technologies used in this project:
+
+- [React Router Documentation](https://reactrouter.com/) - Learn about React Router features and API
+- [React Documentation](https://react.dev/) - Learn React
+- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - TypeScript documentation
+- [Framer Motion](https://www.framer.com/motion/) - Animation library documentation
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Leonaldo Pasaribu**
+
+- GitHub: [@leonaldopasaribu](https://github.com/leonaldopasaribu)
+- LinkedIn: [Leonaldo Pasaribu](https://linkedin.com/in/leonaldo-pasaribu)
 
 ---
 
-Built with ❤️ using React Router.
+<div align="center">
+  Made with ❤️ using React Router
+</div>
