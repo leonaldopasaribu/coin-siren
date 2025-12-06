@@ -1,20 +1,23 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+
 import Footer from "~/components/footer";
 import Header from "~/components/header";
+import Hero from "~/components/hero";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Coin Siren" },
+    { name: "description", content: "Coin Siren" },
   ];
 }
 
 export default function Home() {
   return (
-    <main className="bg-[linear-gradient(151.17deg,#26C2B9_8.69%,#288BE7_126.06%)]">
-      <Header />
-      <Welcome />
+    <main>
+      <div className="bg-[linear-gradient(151.17deg,#26C2B9_8.69%,#288BE7_126.06%)]">
+        <Header />
+        <Hero />
+      </div>
       <Footer />
     </main>
   );
