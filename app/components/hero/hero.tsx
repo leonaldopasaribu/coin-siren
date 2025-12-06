@@ -81,17 +81,24 @@ export default function Hero() {
           </div>
 
           <div className="mx-auto flex w-full flex-col">
-            <Tooltip>
-              <div className="flex items-center gap-2.5">
-                <img
-                  src="/icons/dollar-sign.svg"
-                  alt="Dollar Sign"
-                  width={26}
-                  height={26}
-                />
-                <p className="text-[#00C696]">월 100만원</p>
-              </div>
-            </Tooltip>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              style={{ margin: "0 auto" }}
+            >
+              <Tooltip>
+                <div className="flex items-center gap-2.5">
+                  <img
+                    src="/icons/dollar-sign.svg"
+                    alt="Dollar Sign"
+                    width={26}
+                    height={26}
+                  />
+                  <p className="text-[#00C696]">월 100만원</p>
+                </div>
+              </Tooltip>
+            </motion.div>
 
             <HeroSlider items={HERO_SLIDER_PROFILE} />
           </div>
@@ -105,7 +112,7 @@ export default function Hero() {
           <motion.div
             className="flex gap-2.5"
             animate={{
-              x: -currentIndex * (332 + 10), // 332px width + 10px gap (2.5 * 4)
+              x: -currentIndex * (332 + 10),
             }}
             transition={{
               duration: 0.5,
