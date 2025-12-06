@@ -9,7 +9,8 @@ export default function Footer() {
             <img
               src="/icons/hyperhire-logo.svg"
               alt="Hyperhire Logo"
-              className="h-auto w-32 sm:w-40"
+              width={187}
+              height={34}
             />
             <p className="mt-4 text-sm font-bold text-black sm:text-base">
               우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.
@@ -48,7 +49,8 @@ export default function Footer() {
                     <img
                       src={feature.iconSrc}
                       alt={feature.altText}
-                      className="h-8 w-8 sm:h-10 sm:w-10"
+                      width={40}
+                      height={40}
                     />
                     <p className="mt-3 text-sm font-bold sm:text-base">
                       {feature.title}
@@ -56,9 +58,10 @@ export default function Footer() {
                     <div className="mt-4 flex items-center gap-1">
                       <p className="text-sm font-bold">{feature.linkText}</p>
                       <img
-                        src="/icons/right-arrow.svg"
+                        src="/icons/arrow-right.svg"
                         alt="Right Arrow"
-                        className="h-4 w-4"
+                        width={20}
+                        height={20}
                       />
                     </div>
                   </div>
